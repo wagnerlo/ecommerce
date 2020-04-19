@@ -3,6 +3,14 @@
 // })  
 jQuery(document).ready(() => {
 
+
+    agragarCantidad();
+
+    agregarResultado();
+
+}); // ready
+
+cont agregarCantidad = () => {
     // This button will increment the value
     $('.qtyplus').click(function(e) {
         // Stop acting like a button
@@ -37,14 +45,10 @@ jQuery(document).ready(() => {
             $('input[name=' + fieldName + ']').val(0);
         }
     });
-
-
-    agregarCantidad();
-
-}); // ready
+}
 
 // 
-const agregarCantidad = () => {
+const agregarResultado = () => {
 
     let cantidad;
     let botones = document.querySelectorAll('.botonAgrega'); //regresa un array
